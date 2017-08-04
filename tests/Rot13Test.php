@@ -11,7 +11,7 @@ final class Rot13Test extends TestCase
     {
         $this->assertEquals(
             Rot13('Hello World'),
-            'Uryyb Jbeyqs'
+            'Uryyb Jbeyq'
         );
     }
 }
