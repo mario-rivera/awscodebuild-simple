@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Dependencies
+      - echo "Running Install commands"
+      - composer install --no-interaction --prefer-dist
+  build:
+    commands:
+      # Build
+      - echo "Running Build commands"
+      - ./vendor/bin/phpunit --verbose tests/
